@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfDataBase0510.Forms.MenuForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDataBase0510.Forms"
+        mc:Ignorable="d"
+        Title="MenuForm" Height="450" Width="800">
+    <Grid>
+        <Button Content="Сервис" HorizontalAlignment="Left" Margin="248,124,0,0" VerticalAlignment="Top" Width="243" Click="OpenService_Click"/>
+        <Button Content="Клиенты и услуги" HorizontalAlignment="Left" Margin="248,206,0,0" VerticalAlignment="Top" Width="243" Click="OpenClientService_Click"/>
+        <Button Content="Клиенты" HorizontalAlignment="Left" Margin="248,164,0,0" VerticalAlignment="Top" Width="243" Click="OpenClient_Click"/>
+        <Button Content="Записать услугу" HorizontalAlignment="Left" Margin="248,246,0,0" VerticalAlignment="Top" Width="243" Click="OpenAddClientService_Click"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top" Width="112" Click="ButBack_Click"/>
+
+    </Grid>
+</Window>

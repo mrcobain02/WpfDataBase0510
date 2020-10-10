@@ -1,0 +1,59 @@
+﻿<Window x:Class="WpfDataBase0510.Forms.AddClient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDataBase0510.Forms"
+        mc:Ignorable="d"
+        Title="AddClient" Height="906" Width="647">
+    <Grid x:Name="mainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="74*"/>
+            <RowDefinition Height="747*"/>
+            <RowDefinition Height="54*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="91*"/>
+            <ColumnDefinition Width="591*"/>
+            <ColumnDefinition Width="111*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="1"  HorizontalAlignment="Left"  Grid.Row="1" VerticalAlignment="Top" >
+
+            <Label Content="Фамилия" Margin="5,5,5,5" VerticalAlignment="Center"/>
+            <TextBox Height="26" TextWrapping="Wrap" Text="{Binding FirstName}" Margin="0,15,0,15" />
+
+            <Label Content="Имя" Margin="5,5,5,5" VerticalAlignment="Center"/>
+            <TextBox Height="26" TextWrapping="Wrap" Text="{Binding LastName}"  Margin="0,15,0,15" />
+
+            <Label Content="Отчество" Margin="5,5,5,5" VerticalAlignment="Center"/>
+            <TextBox Height="26" TextWrapping="Wrap" Text="{Binding Patronymic}"  Margin="0,15,0,15" />
+
+            <Label Content="Телефон" Margin="5,5,5,5" VerticalAlignment="Center"/>
+            <TextBox Height="26" TextWrapping="Wrap" Text="{Binding Phone}"  Margin="0,15,0,15" />
+
+            <Label Content="Почта" Margin="5,5,5,5" VerticalAlignment="Center"/>
+            <TextBox Height="26" TextWrapping="Wrap" Text="{Binding Email}"  Margin="0,15,0,15" />
+
+
+            <Label Content="Дата рождения" Margin="5,5,5,5" VerticalAlignment="Center"/>
+            <DatePicker x:Name ="DpBirthday"  HorizontalAlignment="Left" Margin="0,15,0,15" VerticalAlignment="Top" Width="456"/>
+
+            <Label Content="Дата регистрации" Margin="5,5,5,5" VerticalAlignment="Center"/>
+            <DatePicker x:Name ="DpRegistrationDate"  HorizontalAlignment="Left" Margin="0,15,0,15"  VerticalAlignment="Top" Width="456"/>
+
+            <Label Content="Пол" Margin="5,5,5,5" VerticalAlignment="Center"/>
+            <ComboBox x:Name="cbGender" Margin="0,15,0,15" ItemsSource="{Binding Gender.Name}"/>
+
+            <Button Content="Добавить" Margin="0,15,0,15" Click="Button_Click"/>
+
+
+
+
+
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>
